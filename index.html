@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Futebol News - As Maiores Notícias do Futebol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #43ea4a 0%, #b6ffc7 40%, #e6ffe6 50%, #b6ffc7 60%, #43ea4a 100%);
+            box-shadow: 0 0 120px 0 #fff inset;
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .navbar {
+            background: #267326;
+            padding: 16px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 0 18px;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #ffe600;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.98);
+            padding: 32px 24px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+            text-align: left;
+            border: 2px solid #43ea4a;
+        }
+        .news {
+            margin-bottom: 28px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #43ea4a;
+        }
+        .news:last-child {
+            border-bottom: none;
+        }
+        .news-title {
+            color: #267326;
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .news-desc {
+            color: #222;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 8px 22px;
+            background: linear-gradient(90deg, #267326 0%, #43ea4a 100%);
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #ffe600 0%, #267326 100%);
+            color: #267326;
+        }
+        h1 {
+            color: #267326;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 0.5em;
+            text-align: left;
+        }
+        h2 {
+            color: #1e5631;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-bottom: 1.2em;
+            text-align: left;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <a href="#" onclick="window.location.href='#top'">Início</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#futebol">Futebol</a>
+    <a href="#comparacao" onclick="window.open('https://www.transfermarkt.com/statistik/vergleich','_blank')">Comparação de Equipas</a>
+    <a href="#resultados" onclick="window.open('https://www.flashscore.pt/', '_blank')">Resultados</a>
+    <a href="#login" onclick="window.open('https://www.meusite.com/login', '_blank')">Login</a>
+    </div>
+    <div class="container">
+        <div class="news" id="ligaportugal" style="background: #e0eafc; border-radius: 12px; padding: 18px 16px; margin-bottom: 32px;">
+            <div class="news-title" style="color:#1e3c72;">Liga Portugal - Tudo sobre o Campeonato</div>
+            <div class="news-desc" style="color:#222;">Acompanhe as últimas notícias, classificação, resultados ao vivo e informações dos clubes da Liga Portugal. Veja estatísticas, calendário de jogos, transferências e muito mais.</div>
+            <button class="btn" onclick="window.open('https://www.ligaportugal.pt/pt/liga/classificacao','_blank')">Classificação</button>
+            <button class="btn" onclick="window.open('https://www.flashscore.pt/futebol/portugal/liga-portugal/resultados/','_blank')">Resultados ao Vivo</button>
+            <button class="btn" onclick="window.open('https://www.ojogo.pt/futebol/1a-liga/','_blank')">Notícias da Liga</button>
+            <button class="btn" onclick="window.open('https://www.transfermarkt.pt/liga-portugal/startseite/wettbewerb/PO1','_blank')">Transferências e Estatísticas</button>
+        </div>
+        <h1>Futebol News</h1>
+        <h2>Notícias dos Maiores Clubes do Mundo - Atualizadas a Cada Hora</h2>
+        <div class="news" id="arabia">
+            <div class="news-title">Queres saber mais sobre o futebol da Arábia Saudita?</div>
+            <div class="news-desc">Descobre as últimas notícias, transferências e curiosidades sobre o futebol árabe.</div>
+            <button class="btn" onclick="window.open('https://www.goal.com/en/news/saudi-arabia-league/1','_blank')">Futebol da Arábia Saudita</button>
+        </div>
+        <div class="news" id="espanha">
+            <div class="news-title">Queres saber mais sobre o futebol da Espanha?</div>
+            <div class="news-desc">Acompanha as novidades, resultados e destaques da La Liga e dos clubes espanhóis.</div>
+            <button class="btn" onclick="window.open('https://www.marca.com/en/football/spanish-football.html','_blank')">Futebol da Espanha</button>
+        </div>
+        <div class="news" id="alemanha">
+            <div class="news-title">Queres saber mais sobre o futebol da Alemanha?</div>
+            <div class="news-desc">Vê as notícias, transferências e jogos da Bundesliga e dos clubes alemães.</div>
+            <button class="btn" onclick="window.open('https://www.bundesliga.com/en/bundesliga/news','_blank')">Futebol da Alemanha</button>
+        </div>
+        <div class="news" id="franca">
+            <div class="news-title">Queres saber mais sobre o futebol da França?</div>
+            <div class="news-desc">Fica por dentro das novidades da Ligue 1 e dos principais clubes franceses.</div>
+            <button class="btn" onclick="window.open('https://www.lequipe.fr/Football/France/','_blank')">Futebol da França</button>
+        </div>
+        <div class="news" id="brasil">
+            <div class="news-title">Queres saber mais sobre o futebol do Brasil?</div>
+            <div class="news-desc">Acompanha os campeonatos, transferências e notícias dos clubes brasileiros.</div>
+            <button class="btn" onclick="window.open('https://ge.globo.com/futebol/','_blank')">Futebol do Brasil</button>
+        </div>
+<footer style="text-align:center; margin:32px 0 12px 0; color:#267326; font-size:1em;">
+    Site criado por Zidane Fox
+</footer>
+        <div class="news">
+            <div class="news-title">Veja notícias atualizadas a cada hora</div>
+            <div class="news-desc">Acesse portais que trazem notícias de futebol em tempo real, de todos os clubes e campeonatos do mundo.</div>
+            <button class="btn" onclick="window.open('https://www.goal.com/pt','_blank')">Goal.com</button>
+            <button class="btn" onclick="window.open('https://www.espn.com.br/futebol/','_blank')">ESPN Futebol</button>
+            <button class="btn" onclick="window.open('https://www.skysports.com/football/news','_blank')">Sky Sports</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
