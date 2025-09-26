@@ -5,6 +5,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
+        @media (max-width: 600px) {
+            .container {
+                max-width: 98vw;
+                padding: 12px 4vw;
+                border-radius: 12px;
+                margin: 12px auto;
+            }
+            .site-desc {
+                font-size: 1em;
+                padding: 10px;
+                border-radius: 8px;
+                margin-bottom: 16px;
+            }
+            .news {
+                margin-bottom: 18px;
+                padding-bottom: 10px;
+                border-radius: 8px;
+            }
+            .news-title {
+                font-size: 1.08em;
+                margin-bottom: 6px;
+            }
+            .btn {
+                font-size: 0.98em;
+                padding: 8px 8vw;
+                border-radius: 6px;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+            h2 {
+                font-size: 1em;
+            }
+            .navbar {
+                padding: 10px 0;
+                font-size: 0.98em;
+            }
+            .navbar a {
+                margin: 0 8px;
+                font-size: 1em;
+            }
+        }
         .top-bar {
             width: 100%;
             background: linear-gradient(90deg, #ffe600 0%, #fff700 100%);
@@ -68,7 +110,7 @@
             z-index: 1;
         }
         .news-title:before {
-            content: "\f1e3  ";
+            content: "\f1e3";
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             margin-right: 10px;
@@ -76,10 +118,10 @@
             font-size: 1.1em;
         }
         .news-title.football:before {
-            content: "\f1e3  "; /* bola */
+            content: "\f1e3"; /* bola */
         }
         .news-title.field:before {
-            content: "\f022  "; /* campo */
+            content: "\f022"; /* campo */
         }
         .btn {
             /* ...existing code... */
